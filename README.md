@@ -61,6 +61,13 @@
             
             roslaunch robot_arm_pkg check_motors.launch
 
- 
- 
+   ![Screenshot 2022-07-30 100234](https://user-images.githubusercontent.com/64277741/181879125-08793dbc-5a8b-41e9-9d80-8ef0ec7b8a65.png)
+
   
+  Figure (1): the initial point  
+  
+ ![Screenshot 2022-07-30 100407](https://user-images.githubusercontent.com/64277741/181879171-87316067-1089-4877-9f5f-138676d312d9.png)
+
+  
+  Figure (2): after changing value in joint state publisher 
+
