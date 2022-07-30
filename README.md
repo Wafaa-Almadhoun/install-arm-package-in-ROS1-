@@ -1,4 +1,4 @@
-# install-arm-packeg-in-ROS1-
+# install-arm-package-in-ROS1-
 
 
 ## Table of contents
