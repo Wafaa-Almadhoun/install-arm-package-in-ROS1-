@@ -33,17 +33,17 @@
  Step 3 : Install dependency of a arm package
    
    
-         rosdep install --from-paths src --ignore-src -r -y
-
-         sudo apt-get install ros-kinetic-moveit
-
-         sudo apt-get install ros-kinetic-joint-state-publisher ros-kinetic-joint-state-publisher-gui
-
-         sudo apt-get install ros-kinetic-gazebo-ros-control joint-state-publisher
-
-         sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-ros-control
-
-         sudo nano ~/.bashrc
+          rosdep install --from-paths src --ignore-src -r -y
+          
+          sudo apt-get install ros-noetic-moveit
+          
+          sudo apt-get install ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui
+          
+          sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher
+          
+          sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
+          
+          sudo nano ~/.bashrc
 
  Step 4 : at the end of the (bashrc) file add the follwing line
              
@@ -52,12 +52,15 @@
              ctrl + o
               then 
              ctrl + x
-            
+             
+ Step 5 : To update bashrc folder 
+ 
              source ~/.bashrc
 
-roslaunch robot_arm_pkg check_motors.launch
+ Step 6 : To open RViz and joint state publisher      
+            
+            roslaunch robot_arm_pkg check_motors.launch
 
  
  
-  ![1](https://user-images.githubusercontent.com/64277741/179366616-adc5c727-3d54-40de-b673-f5240ac48b65.PNG)
   
