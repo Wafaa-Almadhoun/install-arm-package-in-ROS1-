@@ -1,47 +1,39 @@
 # install-arm-packeg-in-ROS1-
 
 
-# Ros-install-in-Windows-10-with-64-bit-operating-system
 ## Table of contents
 * [Introduction](#Introduction)
 * [Algorithm](#Algorithm)
 
 ## Introduction
-Robot Operating System (ROS or ros) is an open-source robotics middleware suite. Although ROS is not an operating system (OS) but a set of software frameworks for robot software development , the versions of :
-1.	ROS 1
-2.	ROS 2
-3.	ROS-Industrial
-
-
-Operating Systems ROS runs only on Unix servers. While ROS includes software for Ubuntu, Mac OS X, and Fedora, Gentoo, Arch Linux, and other Linux platforms
-
-
-If you are working on Ubuntu, it doesn’t matter. But what for Windows people? Here we go!
-
-
-To install software, you may have to satisfy the system requirements. To install ROS in windows, you need the following system requirements.
-
-
-You must have a Windows 10 64-bit device
-
-
-Also, it is recommended that you have at least 20GB of free space on your C:\ drive for installation and development.
-
-
- * You need virtualbox to use Ubuntu and  develop ROS projects for Windows. 
- 
+  
+ Robot arm packages install in  ROS  that can be used to plan and execute motion trajectories for a robot arm in simulation and real-life. 
+ made by Smart method company , These packages were tested under ROS noetic , The robot arm uses Moveit plugin to apply kinematics by the KDL solver. These packages can be tested in the gazebo simulation tool 
  ## Algorithm
  
- to downloud ROS 1 we need :
+ Step 1 : Open the terminal , create the directories :
+          
+            mkdir -p ~/catkin_ws/src
+            
+            cd ~/catkin_ws/
+
+            catkin_make
+
+            cd ~/catkin_ws/src
+            
+
+
  
- 1- install virtualbox 
+ Step 2 : Put in folder catkin_make the packages of arm from smart method 
+         
+             git clone https://github.com/smart-methods/arduino_robot_arm.git 
+             
+             cd ~/catkin_ws
+
+ Step 3 : 
  
- 2- install Ubunto in virtualbox
+         
  
- 3- install ROS1 in Ubunto
- 
-   following the steps :
-   
   ### 1- install virtualbox 
   
   1- download virtualbox (VirtualBox 6.1.34 )platform packages [here](https://www.virtualbox.org/wiki/Downloads) 
