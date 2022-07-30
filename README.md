@@ -50,7 +50,13 @@
              (source /home/wafaa/catkin_ws/devel/setup.bash)
               then 
              ctrl + o
-         
+              then 
+             ctrl + x
+            
+             source ~/.bashrc
+
+roslaunch robot_arm_pkg check_motors.launch
+
  
  
   ![1](https://user-images.githubusercontent.com/64277741/179366616-adc5c727-3d54-40de-b673-f5240ac48b65.PNG)
