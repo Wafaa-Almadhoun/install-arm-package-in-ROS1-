@@ -30,21 +30,28 @@
              
              cd ~/catkin_ws
 
- Step 3 : 
- 
+ Step 3 : Install dependency of a arm package
+   
+   
+         rosdep install --from-paths src --ignore-src -r -y
+
+         sudo apt-get install ros-kinetic-moveit
+
+         sudo apt-get install ros-kinetic-joint-state-publisher ros-kinetic-joint-state-publisher-gui
+
+         sudo apt-get install ros-kinetic-gazebo-ros-control joint-state-publisher
+
+         sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-ros-control
+
+         sudo nano ~/.bashrc
+
+ Step 4 : at the end of the (bashrc) file add the follwing line
+             
+             (source /home/wafaa/catkin_ws/devel/setup.bash)
+              then 
+             ctrl + o
          
  
-  ### 1- install virtualbox 
-  
-  1- download virtualbox (VirtualBox 6.1.34 )platform packages [here](https://www.virtualbox.org/wiki/Downloads) 
-  
-  2- choose windows hosts 
-  
-  3- open file and setup the program 
-  
-  4- you don't need to change any options just next>next>next>finish
-  
-  5- open the Oracle VM VirtualBox 
-  
+ 
   ![1](https://user-images.githubusercontent.com/64277741/179366616-adc5c727-3d54-40de-b673-f5240ac48b65.PNG)
   
